@@ -1,0 +1,38 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "es2020",
+		"rootDir": "./",
+		"outDir": "./dist",
+		"allowJs": true,
+		"sourceMap": false,
+		"pretty": true,
+		"declaration": false,
+		"alwaysStrict": true,
+		"isolatedModules": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"strictNullChecks": true,
+		"esModuleInterop": true,
+        "moduleResolution": "Bundler",
+		"skipLibCheck": true,
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["./*"],
+			"@/models/*": ["./models/*"],
+			"@/templates/*": ["./templates/*"],
+			"@/utils/*": ["./utils/*"],
+			"@/types/*": ["./types/*"],
+			"@/controllers/*": ["./controllers/*"],
+			"@/middlewares/*": ["./middlewares/*"],
+			"@/routes/*": ["./routes/*"],
+			"@/services/*": ["./services/*"],
+		}
+	},
+	"exclude": ["./node_modules", "./build"],
+	"include": ["./**/*.ts"],
+	"types": ["./types/**/*.d.ts"],
+	"rules": {
+		"@typescript-eslint/ban-ts-ignore": "off"
+	}
+}
