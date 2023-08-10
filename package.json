@@ -5,8 +5,7 @@
 	"main": "src/app.js",
 	"scripts": {
 		"dev": "nodemon",
-		"start": "esr index.ts",
-		"stage": "node ./build/index.js",
+		"start": "node ./build/index.js",
 		"test": "jest",
 		"build": "esbuild --bundle --minify --platform=node --target=node12 --outdir=build ./index.js ",
 		"export": "cd build && zip index.js.zip index.js",
