@@ -1,8 +1,8 @@
-import env from "@/env";
+import env from "./env";
 import express from 'express';
 import mongoose from "mongoose";
 import cors from "cors";
-import productRouter from "@/router/product.router";
+import productRouter from "./router/product.router";
 
 
 const app = express();

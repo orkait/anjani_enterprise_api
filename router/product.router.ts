@@ -1,5 +1,5 @@
 import express from 'express';
-import { SingleProduct } from "@/models/product.model";
+import { SingleProduct } from "../models/product.model";
 import Ajv from 'ajv';
 
 const router = express.Router();
